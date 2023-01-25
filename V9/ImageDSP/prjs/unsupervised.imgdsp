@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE imgdsp>
+<imgdsp>
+    <programs>
+        <program name="Intensity kMeans">
+            <params>
+              <param name="Cluster Num (K)" min="1" current="2" max="16"/>
+            </params>
+        </program>
+        <program name="Color kMeans">
+            <params>
+              <param name="Cluster Num (K)" min="1" current="2" max="16"/>
+            </params>
+        </program>
+        <program name="Intensity+Position kMeans">
+            <params>
+              <param name="Cluster Num (K)" min="1" current="2" max="16"/>
+            </params>
+        </program>
+        <program name="Histogram kMeans">
+            <params>
+              <param name="Cluster Num (K)" min="1" current="2" max="16"/>
+              <param name="Block size (NxN)" min="2" current="8" max="32"/>
+            </params>
+        </program>
+        <program name="SIFT kMeans">
+            <params>
+              <param name="Cluster Num (K)" min="1" current="2" max="16"/>
+              <param name="Block size (NxN)" min="2" current="8" max="32"/>
+            </params>
+        </program>
+    </programs>
+    <in_imgs>
+		<in_img file_name="car.bmp"/>
+		<in_img file_name="Image1.bmp"/>
+		<in_img file_name="lena.bmp"/>
+		<in_img file_name="black_kitten_star.jpg"/>
+		<in_img file_name="black-white-kittens2.jpg"/>
+		<in_img file_name="cat_bed.jpg"/>
+		<in_img file_name="dog.jpg"/>
+		<in_img file_name="eagle.jpg"/>
+		<in_img file_name="dog2.jpg"/>
+		<in_img file_name="grey-cat-grass.jpg"/>
+		<in_img file_name="horse.jpg"/>
+		<in_img file_name="stop.jpg"/>
+    </in_imgs>
+    <out_imgs>
+        <out_img file_name="processed_img.bmp"/>
+    </out_imgs>
+</imgdsp>
+
+
+
+
+
+
+

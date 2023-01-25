@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE imgdsp>
+<imgdsp>
+    <programs>
+		<program name="Sobel Edge Detection">
+            <params>
+                <param name="Threshold" min="0" current="1.0" max="1.41421"/>
+			</params>
+        </program>
+		<program name="NF Filter + Sobel Edge Detection">
+            <params>
+				<param name="stages" min="0" current="1" max="10"/>
+				<param name="Threshold" min="0" current="1.0" max="1.41421"/>
+            </params>
+        </program>
+		<program name="Canny Edge Detection">
+			<params>
+				<param name="Lower" min="0" current="1.0" max="1.41421"/>
+				<param name="Upper" min="0" current="1.0" max="1.41421"/>
+			</params>
+		</program>
+		<program name="NF Filter + Canny Edge Detection">
+			<params>
+				<param name="stages" min="0" current="1" max="10"/>
+				<param name="Lower" min="0" current="1.0" max="1.41421"/>
+				<param name="Upper" min="0" current="1.0" max="1.41421"/>
+			</params>
+		</program>
+    </programs>
+    <in_imgs>
+		<in_img file_name="simpson.jpg"/>
+		<in_img file_name="lena.bmp"/>
+        <in_img file_name="playing_kitten.jpg"/>
+		<in_img file_name="baboon.bmp"/>
+        <in_img file_name="green_cat.jpg"/>
+        <in_img file_name="image1.bmp"/>
+		<in_img file_name="CatWithGreenEyes.png"/>
+		<in_img file_name="fight-club.jpg"/>
+		<in_img file_name="success_baby.bmp"/>
+    </in_imgs>
+    <out_imgs>
+        <out_img file_name="processed_img.jpg"/>
+    </out_imgs>
+</imgdsp>
